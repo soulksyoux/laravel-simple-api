@@ -66,5 +66,45 @@ class ApiController extends Controller
         ], 200);
     }
 
+    public function updateClient(Request $request) {
+        if(!$request->id) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'client id is required',
+            ], 400);
+        }
+
+        $client = Client::findORFail($request->id);
+
+        $client->name = $request->name;
+        $client->email = $request->email;
+        $client->save();
+
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'success',
+            'data' => $client
+        ], 200);
+
+    }
+
+    public function deleteClient(Request $request) {
+        if(!$request->id) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'client id is required',
+            ], 400);
+        }
+
+        $client = Client::findORFail($request->id);
+        $client->delete();
+
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'success'
+        ], 200);
+
+    }
+
 
 }

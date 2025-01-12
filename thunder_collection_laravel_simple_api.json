@@ -1,0 +1,122 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "laravel simple api",
+    "collectionId": "56fbbf4b-7326-4e19-8cea-c57451a3ee3d",
+    "dateExported": "2025-01-12T10:14:11.084Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "18d4a98c-f54f-4e41-a34a-98a420262e3d",
+            "colId": "56fbbf4b-7326-4e19-8cea-c57451a3ee3d",
+            "containerId": "",
+            "name": "[01] Status",
+            "url": "http://laravel_simple_api.test/api/status",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-01-07T20:19:38.635Z",
+            "modified": "2025-01-07T20:19:38.635Z",
+            "headers": []
+        },
+        {
+            "_id": "9644bf0e-87d9-4991-8741-83a18817059f",
+            "colId": "56fbbf4b-7326-4e19-8cea-c57451a3ee3d",
+            "containerId": "",
+            "name": "[02] Clients",
+            "url": "http://laravel_simple_api.test/api/clients?page=2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-01-09T18:23:17.894Z",
+            "modified": "2025-01-09T18:33:40.657Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "3217243b-f49b-41f2-a039-77f4e5f10648",
+            "colId": "56fbbf4b-7326-4e19-8cea-c57451a3ee3d",
+            "containerId": "",
+            "name": "[03] Client by Id",
+            "url": "http://laravel_simple_api.test/api/client_by_id/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-01-09T18:41:45.580Z",
+            "modified": "2025-01-09T18:43:00.126Z",
+            "headers": []
+        },
+        {
+            "_id": "89e21552-8273-4471-9b0d-5c78266aa89d",
+            "colId": "56fbbf4b-7326-4e19-8cea-c57451a3ee3d",
+            "containerId": "",
+            "name": "[03] Client by Id [POST]",
+            "url": "http://laravel_simple_api.test/api/client",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-01-09T18:48:50.334Z",
+            "modified": "2025-01-09T18:52:44.412Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 25\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7df46239-7c63-4783-9609-c8221ea7f09c",
+            "colId": "56fbbf4b-7326-4e19-8cea-c57451a3ee3d",
+            "containerId": "",
+            "name": "[04] Create new Client",
+            "url": "http://laravel_simple_api.test/api/add_client",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2025-01-09T19:01:22.086Z",
+            "modified": "2025-01-09T19:05:52.085Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Rita\",\n  \"email\": \"rita@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "650b2673-25fd-4632-bafb-0905a6824937",
+            "colId": "56fbbf4b-7326-4e19-8cea-c57451a3ee3d",
+            "containerId": "",
+            "name": "[05] Update Client",
+            "url": "http://laravel_simple_api.test/api/update_client",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2025-01-12T10:00:16.659Z",
+            "modified": "2025-01-12T10:03:36.246Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"102\",\n  \"name\": \"Rita Alterado\",\n  \"email\": \"rita_alt@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bb1d3c4d-f8c5-468f-8656-620dea95dd0a",
+            "colId": "56fbbf4b-7326-4e19-8cea-c57451a3ee3d",
+            "containerId": "",
+            "name": "[06] Delete Client",
+            "url": "http://laravel_simple_api.test/api/delete_client",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2025-01-12T10:09:38.627Z",
+            "modified": "2025-01-12T10:10:28.647Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"100\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "JHiGaIlxyhdJFU1S-aDuTJmymBJEJMehcInm8WNjGJANHfwoZ-xYXdRR9S9xXcKyEssn_WI8SARe8W6HBSWkIg"
+}
